@@ -1,0 +1,52 @@
+<!DOCTYP <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Convert Temperatures</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script>
+        
+
+        function convertToF() {
+
+             var jojo = document.getElementsByTagName("html");
+            console.log(jojo);
+
+            var celsiusIn = document.getElementById("celsiusIn");
+            var math = celsiusIn.value * 9/5 + 32;
+            var fahrenheitOutput = document.getElementById("fahrenheitOutput");
+            fahrenheitOutput.innerHTML = math;
+           
+            //alert("Temperature in Fahrenheit is: " + math);
+
+
+
+            // math:
+            // T(°F) = 20°C × 9/5 + 32 = 68 °F
+
+            
+
+        }
+    
+    </script>
+</head>
+<body>
+        <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="convertTemp.html">Convert temperature</a></li>
+                <li><a href="#">to do</a></li>
+                <li><a href="#">to do</a></li>
+                <li><a href="#">to do</a></li>
+            </ul>
+
+            <p>this is the convert temperatures page.</p>
+            <input id=celsiusIn type="text">
+            <input type="button" value="convert to Fahrenheit" id="convertToF" onclick="convertToF()">
+            <p id=fahrenheitOutput>The temperature in Fahrenheit is: </p>
+
+            
+    
+</body>
+</html>
